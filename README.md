@@ -1,18 +1,13 @@
-
----
-
 # 🐦 Twitter Telegram Bot
 
 A Python bot that scrapes tweets from **Nitter**, stores them in **MongoDB**, and sends new tweet alerts to a **Telegram channel** — all without using the official Twitter API.
 
----
 
 ## 📸 Preview
 
 ![Twitter Telegram Bot Preview](assets/img.png)
 *An overview of the bot’s scraping and alert process.*
 
----
 
 ## 🚀 Features
 
@@ -22,7 +17,6 @@ A Python bot that scrapes tweets from **Nitter**, stores them in **MongoDB**, an
 * 🧠 **Randomized Headers** — Generates unique HTTP headers and cookies on every request to bypass scraping restrictions.
 * ⚙️ **Error Handling** — Manages connection and parsing errors per user gracefully.
 
----
 
 ## 🧰 Requirements
 
@@ -30,7 +24,6 @@ A Python bot that scrapes tweets from **Nitter**, stores them in **MongoDB**, an
 * A **MongoDB** instance (local or cloud)
 * A **Telegram Bot API Key** (from [@BotFather](https://t.me/BotFather))
 
----
 
 ## 🔑 Environment Variables
 
@@ -42,7 +35,6 @@ CHANNEL_ID=<your_telegram_channel_id>
 MONGODB_URI=<your_mongodb_connection_uri>
 ```
 
----
 
 ## ⚙️ Installation
 
@@ -59,7 +51,6 @@ MONGODB_URI=<your_mongodb_connection_uri>
    pip install -r requirements.txt
    ```
 
----
 
 ## 🧠 Header Randomization
 
@@ -79,7 +70,7 @@ def generate_headers(self):
     ...
 ```
 
----
+
 
 ## 🧪 Usage Example
 
@@ -106,7 +97,6 @@ bot.tg_sender(data)
 3. Checks MongoDB for already-sent tweet IDs.
 4. Sends only **new tweets** to Telegram with Markdown formatting.
 
----
 
 ## 📂 Project Structure
 
@@ -119,7 +109,6 @@ twitter-telegram-bot/
 └── README.md              # Documentation
 ```
 
----
 
 ## 🛠️ Technologies Used
 
@@ -129,9 +118,12 @@ twitter-telegram-bot/
 * 🧭 **BeautifulSoup4** – HTML parsing
 * 🤖 **Telebot (pyTelegramBotAPI)** – Telegram integration
 
----
 
 ## 🕒 Optional: Automate
 
 You can schedule the bot to run periodically using **cron** or a background task:
+
+## Support
+
+If you want an update or a question feel free to dm. **DOFFNERI**
 
